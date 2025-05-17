@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.time {
+    height: 500px;
+    background: linear-gradient(90deg, red, blue);
+}
+
+.container, .main-conteiner, .footer, .sidebar {
+    margin: 0 auto;
+    width: 70vw;
+    /*если добавить вместо vm %, то ничего не меняется*/
+}
+.container {
+    padding: 50px 0 50px;
+
+}
+html {
+    font-size: 16px;
+    background: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        font-size: 2rem;
+        color: black;
+        font-weight: bold;
+        /*c помощью  transform: rotate(180deg) мы перевернули логотип на 180 градусов начиная с 0 (12 часов)*/
+        transform: rotate(315deg);
+        /*display: flex;*/
+        /*justify-content: start;*/
+        align-self: start;
+    }
+
+    .nav-container {
+        font-size: 1rem;
+        font-weight: bold;
+        display: flex;
+        font-style: normal;
+
+        a {
+            color: black;
+        }
+
+    }
+}
+.address h1 {
+    font-size: 1rem;
+    white-space: nowrap;
+}
+.correspondent {
+    img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.main-conteiner {
+    img {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.golden_ball {
+    img {
+        width: 500px;
+        height: 250px;
+    }
+}
+

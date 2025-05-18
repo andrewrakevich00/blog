@@ -3,9 +3,19 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'MyExile';
+    src: url('/assets/fonts/Russo_One/russo-one.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
 .time {
-    height: 500px;
-    background: linear-gradient(90deg, red, blue);
+    height: 40px;
+    padding: 30px 0 0 0;
 }
 
 .container, .main-conteiner, .footer, .sidebar {
@@ -19,26 +29,33 @@
 }
 html {
     font-size: 16px;
-    background: url("images/background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    /*font-family: "Russo One", sans-serif;*/
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: url('https://admsov.ru/wp-content/uploads/2024/12/vse-pro-futbol-ili-neskolko-interesnykh-faktov-730x365-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
 
     .logo {
         font-size: 2rem;
-        color: black;
+        color: #ffffff;
         font-weight: bold;
         /*c помощью  transform: rotate(180deg) мы перевернули логотип на 180 градусов начиная с 0 (12 часов)*/
-        transform: rotate(315deg);
         /*display: flex;*/
         /*justify-content: start;*/
         align-self: start;
+        padding: 20px 20px 20px 5px
     }
 
     .nav-container {
@@ -48,7 +65,7 @@ html {
         font-style: normal;
 
         a {
-            color: black;
+            color: rgba(120, 110, 110, 0.7);
         }
 
     }
@@ -57,24 +74,64 @@ html {
     font-size: 1rem;
     white-space: nowrap;
 }
-.correspondent {
-    img {
-        width: 70px;
-        height: 70px;
-    }
-}
+
 
 .main-conteiner {
+    padding: 40px 0 0 0;
     img {
         width: 10px;
         height: 10px;
     }
 }
 
+.correspondent {
+    padding: 50px 0 0 0;
+    display: flex;
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.correspondent-text {
+    display: block;
+    align-self: center;
+
+
+}
 .golden_ball {
+    padding: 200px 0 ;
     img {
         width: 500px;
         height: 250px;
     }
 }
 
+.contact figure img{
+    height: 500px;
+    width: 800px;
+}
+
+.contact h2 {
+    padding: 100px 0 50px;
+    /*box-shadow: 40px 40px 100px rgb(213, 213, 19);*/
+}
+
+.contact h3 {
+    padding: 100px 0 50px;
+}
+
+.team h1 {
+    text-shadow: 20px 20px 40px yellow;
+    font-family: 'MyExile', serif;
+
+
+}
+
+.team p {
+    text-shadow: 20px 20px 40px yellow;
+}
+
+.contact {
+    box-shadow: 40px 40px 100px rgb(213, 213, 19);
+}
